@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primera página web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .content {
+            padding: 20px;
+        }
+        .hobbies {
+            list-style-type: none;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        .form-container {
+            margin-top: 20px;
+        }
+        .box {
+            border: 2px solid #4CAF50;
+            background-color: #e7f9e7;
+            padding: 20px;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .socials {
+            margin-top: 20px;
+        }
+        @media (max-width: 600px) {
+            nav a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+            .box {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Hola, mundo!</h1>
+</header>
+
+<nav>
+    <a href="#biografia">Biografía</a>
+    <a href="#hobbies">Pasatiempos</a>
+    <a href="#contacto">Contacto</a>
+</nav>
+
+<div class="content">
+    <section id="biografia">
+        <h2>Biografía</h2>
+        <p> Danilo Renan Muenala Castro</p>
+        <div class="box">
+            <p>Nombre completo: Danilo Renan Muenala Castro
+Fecha de nacimiento: 18 de mayo de 1993
+Lugar de estudios:
+
+Educación secundaria: Colegio Nacional Tabacundo
+
+Educación superior técnica: Instituto Nelson Torres
+
+Educación universitaria: Estudiante de Ingeniería en Sistemas
+Situación familiar: Tercer hijo en su familia
+Ocupación actual: Trabajador independiente
+
+Danilo Renan Muenala Castro es un joven ecuatoriano comprometido con su desarrollo académico y profesional. Tras culminar sus estudios secundarios en el Colegio Nacional Tabacundo, continuó su formación técnica en el Instituto Nelson Torres. Actualmente cursa la carrera de Ingeniería en Sistemas, demostrando un interés constante por la tecnología y la innovación. Como tercer hijo de su familia, ha sabido equilibrar sus responsabilidades familiares y personales, destacándose además como trabajador independiente. Su espíritu emprendedor y su pasión por el aprendizaje lo motivan a seguir creciendo en el ámbito profesional.</p>
+        </div>
+    </section>
+
+    <section id="hobbies">
+        <h2>Pasatiempos</h2>
+        <ul class="hobbies">
+            <li>Leer libros</li>
+            <li>Hacer ejercicio</li>
+            <li>Viajar</li>
+        </ul>
+        <h3>Galería de Pasatiempos</h3>
+        <img src="https://images.app.goo.gl/iAAHEdz8AVnegx9v8" alt="Leer libros" style="width:100px; margin-right: 10px;">
+        <img src="https://images.app.goo.gl/HgobtERqvs69Mcc78" alt="Hacer ejercicio" style="width:100px; margin-right: 10px;">
+        <img src="https://via.placeholder.com/100?text=Viajar" alt="Viajar" style="width:100px;">
+    </section>
+
+    <section>
+        <h2>Tabla de Países y Capitales</h2>
+        <table>
+            <tr>
+                <th>País</th>
+                <th>Capital</th>
+            </tr>
+            <tr>
+                <td>España</td>
+                <td>Madrid</td>
+            </tr>
+            <tr>
+                <td>Francia</td>
+                <td>París</td>
+            </tr>
+            <tr>
+                <td>Italia</td>
+                <td>Roma</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="contacto" class="form-container">
+        <h2>Contacto</h2>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" required><br><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+    <section class="socials">
+        <h2>Redes Sociales</h2>
+        <p>
+            Facebook: <a href="https://www.facebook.com/Danisyto" target="_blank">Danisyto</a><br>
+            Correo: <a href="mailto:danilomuenala123@gmail.com">danilomuenala123@gmail.com</a><br>
+            WhatsApp: <a href="https://wa.me/0979325679" target="_blank">0979325679</a>
+        </p>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2025 Mi primera página web</p>
+</footer>
+
+</body>
+</html>
